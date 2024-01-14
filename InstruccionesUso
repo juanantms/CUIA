@@ -1,0 +1,30 @@
+Para comenzar la instalacion debemos de darle permisos de ejecucion al archivo "instalacionLibrerias.sh"
+
+    >   chmod +x instalacionLibrerias.sh
+
+Una vez hecho ejecutamos
+
+    >   ./instalacionLibrerias.sh
+
+Información adicional sobre los archivos:
+- cliente.py: Contiene la estructura de datos de los clientes
+- funciones.py: Contiene todas las funciones que usaremos en nuestro programa principal
+- main.py: Programa principal con toda la funcionalidad
+
+Información adicional sobre las carpetas:
+- Carpeta datos: Almacena archivos json con los datos de los usuarios registrados
+- Carpeta img: Contiene imagenes en jpeg que el programa reconocerá en la realidad
+- Carpeta img_aruco: Contiene la imagen que se mostrará en el marcador Aruco
+- Carpeta registrados: Contiene fotos en jpeg de los usuarios registrados. IMPORTANTE: NO PUEDE ESTAR VACIA
+
+Informacion adicional:
+-Ejecución del main:
+	>   python3 main.py
+-El usuario registrado por defecto es Dwayne Johnson. Para probar la app con el debe de mostrar una foto suya a la cámara
+-Las localizaciones que reconoce el programa son:
+  - Foto de la Alhambra
+  - Catedral de Granada
+  - Plaza de Toros de Granada
+  - Puerta de la Justicia
+-Para probar muestre fotos a la camara de las localizaciones mencionadas
+-Para mas informacion lease la Memoria.pdf

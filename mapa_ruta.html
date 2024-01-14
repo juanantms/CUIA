@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0ff24608c0b85cc5d732a0005433c07 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c0ff24608c0b85cc5d732a0005433c07" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c0ff24608c0b85cc5d732a0005433c07 = L.map(
+                "map_c0ff24608c0b85cc5d732a0005433c07",
+                {
+                    center: [37.17875, -3.59996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a2b2f27c02c9bfebd3e96767f8b63713 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c0ff24608c0b85cc5d732a0005433c07);
+        
+    
+            var marker_cluster_fe1bede790fae59726f07cc60e0b473b = L.markerClusterGroup(
+                {}
+            );
+            map_c0ff24608c0b85cc5d732a0005433c07.addLayer(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var marker_d0e3a18d2a7f37fab77d113f3656af7a = L.marker(
+                [37.172589, -3.60136],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_e3e4156f069fec4e2ba21f9777ad9580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d0e3a18d2a7f37fab77d113f3656af7a.setIcon(icon_e3e4156f069fec4e2ba21f9777ad9580);
+        
+    
+        var popup_b47fa669c1a56fc105db3ed93786046a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b246e9e754c6955b6d31c0c0da0c4fd = $(`<div id="html_6b246e9e754c6955b6d31c0c0da0c4fd" style="width: 100.0%; height: 100.0%;">recogidas, Granada, España</div>`)[0];
+                popup_b47fa669c1a56fc105db3ed93786046a.setContent(html_6b246e9e754c6955b6d31c0c0da0c4fd);
+            
+        
+
+        marker_d0e3a18d2a7f37fab77d113f3656af7a.bindPopup(popup_b47fa669c1a56fc105db3ed93786046a)
+        ;
+
+        
+    
+    
+            var marker_cb9b7d09871a966ba3bd151c3eec5468 = L.marker(
+                [37.17671, -3.59594],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_4103739fb4d55d1df13efd4633d02e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb9b7d09871a966ba3bd151c3eec5468.setIcon(icon_4103739fb4d55d1df13efd4633d02e33);
+        
+    
+        var popup_ae3e4dadd7caedca091bb9aa40fdd12e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fbcd566a83ea6b4d011bbea3155de30 = $(`<div id="html_0fbcd566a83ea6b4d011bbea3155de30" style="width: 100.0%; height: 100.0%;">plaza nueva, Granada, España</div>`)[0];
+                popup_ae3e4dadd7caedca091bb9aa40fdd12e.setContent(html_0fbcd566a83ea6b4d011bbea3155de30);
+            
+        
+
+        marker_cb9b7d09871a966ba3bd151c3eec5468.bindPopup(popup_ae3e4dadd7caedca091bb9aa40fdd12e)
+        ;
+
+        
+    
+    
+            var marker_a716f7d3343299e9966d9d85c02fe58b = L.marker(
+                [37.176098999999994, -3.5902189999999994],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_2a3020c03a4b066831538814c4abbcc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a716f7d3343299e9966d9d85c02fe58b.setIcon(icon_2a3020c03a4b066831538814c4abbcc1);
+        
+    
+        var popup_34e3a6a9f1e88c263f1c4b73f5fb4c00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf5e4180b0711490ee083ebac976395c = $(`<div id="html_cf5e4180b0711490ee083ebac976395c" style="width: 100.0%; height: 100.0%;">Puerta de la justicia, Granada, España</div>`)[0];
+                popup_34e3a6a9f1e88c263f1c4b73f5fb4c00.setContent(html_cf5e4180b0711490ee083ebac976395c);
+            
+        
+
+        marker_a716f7d3343299e9966d9d85c02fe58b.bindPopup(popup_34e3a6a9f1e88c263f1c4b73f5fb4c00)
+        ;
+
+        
+    
+    
+            var marker_94fc8ab5f53d3f683daf04837aa92414 = L.marker(
+                [37.17411, -3.5872],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_42561755ad376b9f5fbd96f07fb42a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94fc8ab5f53d3f683daf04837aa92414.setIcon(icon_42561755ad376b9f5fbd96f07fb42a20);
+        
+    
+        var popup_0b072afe502e80603a0b29f0ec419b0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d28d3a61bed0ee97d947e255ad2e1fe4 = $(`<div id="html_d28d3a61bed0ee97d947e255ad2e1fe4" style="width: 100.0%; height: 100.0%;">Paseo del Generalife, Granada, España</div>`)[0];
+                popup_0b072afe502e80603a0b29f0ec419b0f.setContent(html_d28d3a61bed0ee97d947e255ad2e1fe4);
+            
+        
+
+        marker_94fc8ab5f53d3f683daf04837aa92414.bindPopup(popup_0b072afe502e80603a0b29f0ec419b0f)
+        ;
+
+        
+    
+    
+            var marker_58929d09345d66f3930812b44da2ab31 = L.marker(
+                [37.177558, -3.5875320000000004],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_21f438b0eff70a670898259e36c2df19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58929d09345d66f3930812b44da2ab31.setIcon(icon_21f438b0eff70a670898259e36c2df19);
+        
+    
+        var popup_00a125c4b5410f02b8eaa9c079c2b84c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61ec39a348ff0786e234c20c70647f08 = $(`<div id="html_61ec39a348ff0786e234c20c70647f08" style="width: 100.0%; height: 100.0%;">Cuesta del rey chico, Granada, España</div>`)[0];
+                popup_00a125c4b5410f02b8eaa9c079c2b84c.setContent(html_61ec39a348ff0786e234c20c70647f08);
+            
+        
+
+        marker_58929d09345d66f3930812b44da2ab31.bindPopup(popup_00a125c4b5410f02b8eaa9c079c2b84c)
+        ;
+
+        
+    
+    
+            var marker_6ae77c4579c29c742859bd9ef522ba3b = L.marker(
+                [37.18053, -3.588512],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_26d94f838f9baf14ad1be93567546e39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ae77c4579c29c742859bd9ef522ba3b.setIcon(icon_26d94f838f9baf14ad1be93567546e39);
+        
+    
+        var popup_b033fdeafc2efdd9ea426d1ed83c9a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb0caa05444b8ab1bb28f4ff4e64e51c = $(`<div id="html_fb0caa05444b8ab1bb28f4ff4e64e51c" style="width: 100.0%; height: 100.0%;">Cuesta del chapiz, Granada, España</div>`)[0];
+                popup_b033fdeafc2efdd9ea426d1ed83c9a0b.setContent(html_fb0caa05444b8ab1bb28f4ff4e64e51c);
+            
+        
+
+        marker_6ae77c4579c29c742859bd9ef522ba3b.bindPopup(popup_b033fdeafc2efdd9ea426d1ed83c9a0b)
+        ;
+
+        
+    
+    
+            var marker_90554c537c7b42a9554c009fb6fb1c05 = L.marker(
+                [37.18142599999999, -3.5833520000000005],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_f65162ebfe66e8d3b6717aa46808d8b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90554c537c7b42a9554c009fb6fb1c05.setIcon(icon_f65162ebfe66e8d3b6717aa46808d8b2);
+        
+    
+        var popup_21457c71f6ee8be33a95eabec8b1cc17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad7d1a7774d2d3365278c09cf2bfbcf = $(`<div id="html_fad7d1a7774d2d3365278c09cf2bfbcf" style="width: 100.0%; height: 100.0%;">La chumbera, Granada, España</div>`)[0];
+                popup_21457c71f6ee8be33a95eabec8b1cc17.setContent(html_fad7d1a7774d2d3365278c09cf2bfbcf);
+            
+        
+
+        marker_90554c537c7b42a9554c009fb6fb1c05.bindPopup(popup_21457c71f6ee8be33a95eabec8b1cc17)
+        ;
+
+        
+    
+    
+            var marker_74d352ddb25f1483d7fc2c08555a5f81 = L.marker(
+                [37.18118, -3.5933],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_35a9004b37038f475807a1f0119c4244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_74d352ddb25f1483d7fc2c08555a5f81.setIcon(icon_35a9004b37038f475807a1f0119c4244);
+        
+    
+        var popup_8e6c63df41794d62d1e658d5424cbe8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_432f190a92ab03dfb3bbec7ef01f39ce = $(`<div id="html_432f190a92ab03dfb3bbec7ef01f39ce" style="width: 100.0%; height: 100.0%;">mirador de san nicolas, Granada, España</div>`)[0];
+                popup_8e6c63df41794d62d1e658d5424cbe8d.setContent(html_432f190a92ab03dfb3bbec7ef01f39ce);
+            
+        
+
+        marker_74d352ddb25f1483d7fc2c08555a5f81.bindPopup(popup_8e6c63df41794d62d1e658d5424cbe8d)
+        ;
+
+        
+    
+    
+            var marker_7a60907011103c799b50273900017b8a = L.marker(
+                [37.176709999999986, -3.5959399999999997],
+                {}
+            ).addTo(marker_cluster_fe1bede790fae59726f07cc60e0b473b);
+        
+    
+            var icon_06b2be560942cc1dc7f6163cf7f16595 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a60907011103c799b50273900017b8a.setIcon(icon_06b2be560942cc1dc7f6163cf7f16595);
+        
+    
+        var popup_5da704d96642293e9f73dff757f6c325 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19fabadba17faf1eb04ff9ea966aae98 = $(`<div id="html_19fabadba17faf1eb04ff9ea966aae98" style="width: 100.0%; height: 100.0%;">plaza nueva, Granada, España</div>`)[0];
+                popup_5da704d96642293e9f73dff757f6c325.setContent(html_19fabadba17faf1eb04ff9ea966aae98);
+            
+        
+
+        marker_7a60907011103c799b50273900017b8a.bindPopup(popup_5da704d96642293e9f73dff757f6c325)
+        ;
+
+        
+    
+    
+            var poly_line_445f53a84e8f75df5a93a8a0b60594ba = L.polyline(
+                [[37.172589, -3.60136], [37.17344, -3.59964], [37.17358, -3.59955], [37.17671, -3.59594], [37.17671, -3.59594], [37.17606, -3.59291], [37.17581, -3.589899999999999], [37.176098999999994, -3.5902189999999994], [37.176099, -3.590219], [37.175810000000006, -3.5898999999999996], [37.17492, -3.588939999999999], [37.17461, -3.588129999999999], [37.1741, -3.5883499999999993], [37.174110000000006, -3.5871999999999997], [37.17411, -3.5872], [37.17433000000001, -3.58521], [37.17450000000001, -3.58508], [37.177558, -3.5875320000000004], [37.177558, -3.587532], [37.17823, -3.5881499999999997], [37.17927, -3.588329999999999], [37.180530000000005, -3.588511999999999], [37.18053, -3.588512], [37.1812, -3.5887100000000003], [37.18142599999999, -3.5833520000000005], [37.181426, -3.583352], [37.18107, -3.5872899999999994], [37.18120000000001, -3.58871], [37.18087, -3.59009], [37.18098000000001, -3.5903899999999997], [37.18107000000001, -3.59121], [37.18104000000001, -3.59151], [37.18105000000001, -3.59241], [37.181210000000014, -3.59246], [37.18118000000001, -3.5933]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c0ff24608c0b85cc5d732a0005433c07);
+        
+    
+            var poly_line_379fd8c506e177f34127e66fa363e81f = L.polyline(
+                [[37.18118, -3.5933], [37.1812, -3.5938000000000003], [37.18125, -3.5943000000000005], [37.180369999999996, -3.59431], [37.1804, -3.5946599999999997], [37.17946, -3.5947799999999996], [37.17910999999999, -3.5949099999999996], [37.178299999999986, -3.5956299999999994], [37.17803999999998, -3.59535], [37.17799999999998, -3.59555], [37.177069999999986, -3.5952799999999994], [37.176709999999986, -3.5959399999999997]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c0ff24608c0b85cc5d732a0005433c07);
+        
+</script>
+</html>
